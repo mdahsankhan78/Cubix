@@ -37,19 +37,18 @@ const Cards = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
+    
     return (
         <div>
             <div className="grid grid-cols-1 md:grid-cols-2 my-24 gap-24">
                 {/* Card 1 */}
                 <InView
-                    triggerOnce={true}
+                    triggerOnce={false}
                     onChange={(inView) => {
                         if (inView) {
                             setScroll1(window.scrollY);
                         }
-                    }}
-                >
+                    }}>
                     <div className="col-span-1">
                         <div
                             className='bg-[url(/images/card1.webp)] bg-cover bg-center bg-no-repeat h-screen rounded-3xl'
@@ -68,7 +67,7 @@ const Cards = () => {
 
                 {/* Card 2 */}
                 <InView
-                    triggerOnce={true}
+                    triggerOnce={false}
                     onChange={(inView) => {
                         if (inView) {
                             setScroll2(window.scrollY);
@@ -93,7 +92,7 @@ const Cards = () => {
 
                 {/* Card 3 */}
                 <InView
-                    triggerOnce={true}
+                    triggerOnce={false}
                     onChange={(inView) => {
                         if (inView) {
                             setScroll3(window.scrollY);
@@ -118,7 +117,7 @@ const Cards = () => {
 
                 {/* Card 4 */}
                 <InView
-                    triggerOnce={true}
+                    triggerOnce={false}
                     onChange={(inView) => {
                         if (inView) {
                             setScroll4(window.scrollY);

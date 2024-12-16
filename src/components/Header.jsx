@@ -40,8 +40,8 @@ const Header = () => {
                     <div className="flex items-center justify-center gap-x-6 w-full">
                         {/* nav */}
                         <Nav
-                            containerStyles="hidden lg:flex gap-x-8 items-center transition-all"
-                            linkStyles={`relative font-bold text-lg hover:text-primary transition-all ${header ? 'text-black':'text-white'}`}
+                            containerStyles="hidden lg:flex gap-x-10 items-center transition-all"
+                            linkStyles={`relative font-semibold text-md hover:text-primary transition-all ${header ? 'text-black':'text-white'}`}
                             underlineStyles="absolute left-0 top-[3.2rem] h-[3px] bg-primary w-full"
                         />
                         {/* <ThemeToggler /> */}

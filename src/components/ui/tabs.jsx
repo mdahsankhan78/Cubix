@@ -9,7 +9,7 @@ const TabsList = React.forwardRef(({ className, ...props }, ref) => (
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      "grid h-auto items-center justify-start p-1 text-muted-foreground bg-transparent", // Changed from justify-center to justify-start
+      "grid h-auto items-center justify-start p-1 text-muted-foreground bg-transparent",
       className
     )}
     {...props} />
@@ -20,7 +20,7 @@ const TabsTrigger = React.forwardRef(({ className, ...props }, ref) => (
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex font-normal bg-transparent items-center whitespace-nowrap rounded-full px-8 py-5 text-lg data-[state=active]:font-bold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#89EDB1] data-[state=active]:to-white text-foreground data-[state=active]:shadow",
+      "inline-flex font-normal bg-transparent items-center whitespace-nowrap rounded-full px-8 py-5 text-lg data-[state=active]:font-bold  transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-foreground data-[state=active]:shadow",
       className
     )}
     {...props} />

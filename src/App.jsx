@@ -9,24 +9,35 @@ import Journey from "./components/Journey"
 import Products from "./components/Products"
 import Stories from "./components/Stories"
 import Technologies from "./components/Technologies"
+import Blogs from "./components/Blogs"
+import Modal from "./components/ui/Modal"
+import 'aos/dist/aos.css';
+import Aos from "aos"
+import { useEffect } from "react"
+import Footer from "./components/Footer"
 
 function App() {
+  useEffect(() => {
+    Aos.init({easing: 'ease-in-out' });
+  }, []);
 
   return (
     <>
+      <Modal/>
       <Header />
       <div className="relative md:-top-24 inset-0 z-0 h-screen">
         <Hero />
-        <SliderHero/>
+        <SliderHero />
       </div>
-      <Stories/>
-      <Journey/>
-      <Products/>
-      <Technologies/>
-      <Clients/>
-      <Industries/>
-      <Awards/>
-      
+      <Stories />
+      <Journey />
+      <Products />
+      <Technologies />
+      <Clients />
+      <Industries />
+      <Awards />
+      <Blogs />
+      <Footer />
     </>
   )
 }

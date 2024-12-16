@@ -15,7 +15,7 @@ const AwardCards = ({ data }) => {
     autoplaySpeed: 0,         // Instant transition, but controlled by `speed`
     arrows: false,            // Arrows hidden
     cssEase: 'linear',        // Linear easing for smooth scroll
-    
+
     responsive: [
       {
         breakpoint: 1200, // When the screen width is 1200px or less
@@ -57,8 +57,6 @@ const AwardCards = ({ data }) => {
             </div>
           </div>
         ))}
-
-
       </Slider>
       <style jsx>
         {`
